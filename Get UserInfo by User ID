@@ -10,7 +10,7 @@ Saved User ID's
 
 import java.util.Scanner;
 
-public class Program
+public class Program extends Person
 
 {
 
