@@ -1,0 +1,91 @@
+/* 
+
+Saved User ID's
+
+    12345
+
+    6789
+
+*/
+
+import java.util.Scanner;
+
+public class Program
+
+{
+
+    public static void main(String[] args) {
+
+        
+
+        Person p = new Person();
+
+        
+
+        Scanner input = new Scanner(System.in);
+
+        
+
+        System.out.print("Enter your User ID : ");
+
+        int userid = input.nextInt();
+
+        int id;
+
+        switch(userid){
+
+            case 12345:
+
+            id = 0;
+
+            System.out.println("\nName : " + p.name[id]);
+
+            System.out.println("Age : " + p.age[id]);
+
+            System.out.println("Gender : " + p.gender[id]);
+
+            p.married();
+
+            System.out.println("Married : " + p.married + " with " + p.name[1]);
+
+        
+
+            p.filipino();
+
+            System.out.println("Nationality : " + p.nationality);
+
+            break;
+
+            case 6789:
+
+            id = 1;
+
+            System.out.println("\nName : " + p.name[id]);
+
+            System.out.println("Age : " + p.age[id]);
+
+            System.out.println("Gender : " + p.gender[id]);
+
+            p.married();
+
+            System.out.println("Married : " + p.married + " with " + p.name[0]);
+
+            
+
+            p.filipino();
+
+            System.out.println("Nationality : " + p.nationality);
+
+            break;
+
+            default:
+
+            System.out.println("\nUser Id not found!");
+
+            break;
+
+        }
+
+    }
+
+}
